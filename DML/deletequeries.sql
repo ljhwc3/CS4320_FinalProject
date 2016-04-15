@@ -1,6 +1,6 @@
 -- DELETE
 
-DELETE FROM users WHERE email = 'ntctk4@mail.missouri.edu';
+DELETE FROM users WHERE user_email = 'ntctk4@mail.missouri.edu';
 
 DELETE FROM profile WHERE email = 'ntctk4@mail.missouri.edu';
 
