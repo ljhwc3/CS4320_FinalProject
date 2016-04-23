@@ -7,89 +7,120 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <style>
-        ul {
-            margin: 22px;
-            padding-bottom: 15px;
-        }
         
         .topDiv {
-            outline: solid black;
             width: auto;
             height: 200px;
-            margin-left: 100px;
-            margin-right: 100px;   
+            margin-left: 0px;
+            margin-right: 0px;   
         }
         
-        .leftDiv {
-            outline: solid black;
+        #leftDiv {
             float: left;
-            width: 500px;
+            width: 450px;
             height: 500px;
-            margin-left: 100px;
+            margin-left: 0px;
             margin-top: 25px;
-            margin-bottom: 30px;
+            margin-bottom: 0px;
         }
         
-        .postJobDiv {
-            outline: solid black;
+        #postJobDiv {
             float: right;
             width: 500px;
             height: 200px;
-            margin-right: 100px;
+            margin-right: 0px;
             margin-top: 25px;
+            
         }
         
-        .jobsDiv {
-            outline: solid black;
+        #jobsDiv {
             float: right;
-            margin-right: 100px;
+            margin-right: 0px;
             margin-top: 25px;
             width: 500px;
             height: 275px;
         }
         
+        #borders {
+            margin-top:0px;
+            border: #cdcdcd medium solid;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            padding: 5px;
+            width: auto;
+        }
+        
+        #box {
+            height: auto;
+        }
+        
     </style>
     
     <title>Jobs</title>
-    <h1>LinkedIn 2.0</h1>
 </head>
 
 <body>
-    <ul class="nav nav-pills">
-      <li><a href="timeline.html">Home</a></li>
-      <li><a href="profilePage.html">Profile</a></li>
-      <li><a href="networks.html">Network</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li class="active"><a href="jobs.html">Jobs</a></li>
-      <li><a href="interests.html">Interests</a></li>
-    </ul>
+    <nav class="navbar navbar-inverse" style="background-color = crimson">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="timeline.html">LinkedIn 2.0</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="timeline.html">Home</a></li>
+          <li><a href="profilePage.html">Profile</a></li>
+          <li><a href="networks.html">Network</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li class="active"><a href="jobs.html">Jobs</a></li>
+          <li><a href="interests.html">Interests</a></li>
+        </ul>
+        </div>
+    </nav>
     
-    <div class="topDiv">
-        <p>Search Jobs</p>
-        <form>
-          <input type="text" name="Search.."><input type="submit" value="Submit">
-        </form>
-    </div>
-    <div class="leftDiv">
-        <h4>Jobs you may be intersted in....</h4>
-        <p>Job!</p>
-    </div>
-    <div class="postJobDiv">
-        <p>Are you hiring?</p>
-        <a href="post.html">Post</a>
-    </div>
-    <div class="jobsDiv">
-        <p>Saved jobs..</p>
-        <br>
-        <br>
-        <br>
-        <p>Job Alerts...</p>
-        <br>
-        <br>
-        <br>
-        <p>Applied Jobs...</p>
+    <div class="container">
+        <div class="jumbotron container-fluid">
+            <div id="box" class="row">
+               <div class="col-md-12">
     
+                    <div class="col-xs-12">
+                        <div id="borders">
+                            <p>Search Jobs</p>
+                            <form>
+                              <input type="text" name="Search.."><input type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-5" id="leftDiv">
+                        <div id="borders">
+                            <h4>Jobs you may be intersted in....</h4>
+                            <p>Job!</p>
+                            <br><br><br>
+                            <p>Another job!</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-offset-0" id="postJobDiv">
+                            <div id="borders">
+                            <p>Are you hiring?</p>
+                            <a href="post.html">Post</a>
+                        </div>
+                    </div>
+                    <div id="jobsDiv">
+                        <div id="borders">
+                            <p>Saved jobs..</p>
+                            <br>
+                            <br>
+                            <br>
+                            <p>Job Alerts...</p>
+                            <br>
+                            <br>
+                            <br>
+                            <p>Applied Jobs...</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
 </body>
 </html>
